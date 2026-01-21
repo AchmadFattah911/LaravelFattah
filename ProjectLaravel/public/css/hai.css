@@ -548,3 +548,52 @@ section p {
         0 0 30px rgba(124,58,237,0.8),
         0 30px 70px rgba(34,211,238,0.4);
 }
+
+/* =========================
+   FULLSCREEN SECTION (ABOUT, SKILLS, CONTACT)
+========================= */
+.full-section {
+    min-height: 100vh;
+    padding: 140px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* WRAPPER KONTEN */
+.full-section .content {
+    max-width: 800px;
+    animation: fadeSlide 1.6s ease forwards;
+}
+
+/* JUDUL DI TENGAH */
+.full-section h2 {
+    font-size: 2rem;
+    margin-bottom: 26px;
+    padding-left: 0;
+    border-left: none;
+    position: relative;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* GARIS AKSEN BAWAH JUDUL */
+.full-section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 18px auto 0;
+    background: linear-gradient(135deg, #7c3aed, #22d3ee);
+    border-radius: 999px;
+}
+
+/* DESKRIPSI DI TENGAH */
+.full-section p {
+    margin-top: 30px;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #cbd5f5;
+    animation: float 6s ease-in-out infinite;
+}
+

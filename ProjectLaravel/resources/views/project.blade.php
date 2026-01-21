@@ -20,7 +20,7 @@
 
 <!-- HEADER PROJECT -->
 <section class="project-header">
-    <h1><?php echo $project; ?></h1>
+    <h1>{{ $project }}</h1>
     <p>Kumpulan project yang pernah saya buat</p>
 </section>
 

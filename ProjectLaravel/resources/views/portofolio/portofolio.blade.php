@@ -17,8 +17,9 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    @extends('layouts.main') <!-- Memanggil layout utama -->
     <!-- HERO / HOME -->
+     @section('content')
     <div class="hero reveal" id="home">
         <div class="hero-text">
             <h1>Halo, Saya <span>Fattah</span></h1>
@@ -35,27 +36,32 @@
     </div>
 
     <!-- ABOUT -->
-    <section class="about" id="about">
-        <h2>Tentang Saya</h2>
+    <section class="about full-section">
+    <div class="content">
+        <h2>About Me</h2>
         <p>
-            Saya adalah siswa Airlangga yang baru terjun ke dunia web development.
-            Saat ini saya fokus mempelajari dan mengembangkan skill menggunakan
-            HTML, CSS, JavaScript, PHP, Python, dan Laravel.
+            Saya adalah web developer yang fokus pada pembuatan UI modern,
+            interaktif, dan performa tinggi menggunakan Laravel dan teknologi web modern.
         </p>
-    </section>
+    </div>
+</section>
+
 
     <!-- SKILLS -->
-    <section class="skills">
-        <h2>Skill</h2>
+    <section class="skills full-section">
+    <div class="content">
+        <h2>Skills</h2>
+
         <ul>
+            <li>Laravel</li>
+            <li>PHP</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>PHP</li>
-            <li>Python</li>
-            <li>Laravel (Basic)</li>
         </ul>
-    </section>
+    </div>
+</section>
+
 
     <!-- PROJECT -->
     <section class="project" id="project">
@@ -94,6 +100,7 @@
         Hubungi Saya
     </a>
 </section>
+@endsection
 
 
 
